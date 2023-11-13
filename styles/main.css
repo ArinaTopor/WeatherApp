@@ -1,0 +1,42 @@
+body{
+    font-size: 18px;
+    box-sizing: border-box;
+}
+form{
+margin-top: 36px;
+margin-bottom: 16px;
+text-align: center;
+}
+form div{
+    margin-bottom: 15px;
+    position: relative;
+}
+input{
+    width: 300px;
+    border: 1px solid #3b3232;
+    border-radius: 2px;
+    height: 18px;
+}
+.wheather{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.wheather_show{
+    background-color: #355FCA;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+.wheather_info{
+    margin: auto;
+}
+.wheather_info_description{
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
