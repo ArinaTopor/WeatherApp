@@ -5,35 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/main.css" />
     <title>wheatherApp</title>
-    <script
-      src="https://api-maps.yandex.ru/2.0-stable/?apikey=bbee3478-f727-4460-8794-783aa6555777&load=package.standard&lang=ru-RU"
-      type="text/javascript"
-    ></script>
+    <head>
+      <script
+        src="https://api-maps.yandex.ru/2.1/?apikey=bbee3478-f727-4460-8794-783aa6555777&lang=ru_RU"
+        type="text/javascript"
+      ></script>
+    </head>
   </head>
   <body>
-    <section class="wheather">
-      <form id="geoInfo">
-        <div>
-          <label>Широта</label>
-          <input type="number" id="breadth" name="breadth" />
-        </div>
-        <div>
-          <label>Долгота</label>
-          <input type="number" id="longitude" name="longitude" />
-        </div>
-        <button type="submit" class="wheather_show" id="showData">
-          Показать погоду
-        </button>
-      </form>
-      <div class="wheather_info">
-        <div class="wheather_info_description">
-          <p id="temp"></p>
-          <p id="title_wheather"></p>
-          <img id="icon_wheather" />
-        </div>
-        <div id="map" style="width: 600px; height: 400px"></div>
-      </div>
-    </section>
+    <div class="wheather_wrapper">
+      <section class="wheather" id="weather1"></section>
+      <section class="wheather" id="weather2"></section>
+      <button class="addWidget" id="add">+ виджет</button>
+    </div>
+
     <script src="/js/app.js"></script>
   </body>
 </html>
