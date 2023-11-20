@@ -9,7 +9,7 @@ class WeatherWidget {
 
   createWidget() {
     this.container.innerHTML = `
-    <div class='container'>
+    <div class='container-widget'>
       <form id="geoInfo">
         <div>
           <label>Широта</label>

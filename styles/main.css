@@ -35,22 +35,23 @@ button:hover{
     background-color: #617cbe;
 }
 
-.wheather_wrapper{
-    flex: 1;
-    margin-right: 10px;
+.wheather-wrapper{
+    margin:auto;
+    max-width: 1200px;
 }
 
-.container{
-    display: flex;
-    justify-content: space-between;
-}
-
-.wheather{
+.wheather-widget{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin: auto;
 }
+
+.container-widget{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .wheather_info_description{
     display: grid;
