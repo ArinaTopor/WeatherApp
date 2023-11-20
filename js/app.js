@@ -58,7 +58,7 @@ class WeatherWidget {
   async getDataWheather(
     breadth,
     longitude,
-    url = `http://api.weatherapi.com/v1/current.json?key=6e45396b737a411cb50150133231211&q=${breadth},${longitude}&lang=ru`
+    url = `https://api.weatherapi.com/v1/current.json?key=6e45396b737a411cb50150133231211&q=${breadth},${longitude}&lang=ru`
   ) {
     try {
       const response = await fetch(url);
