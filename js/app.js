@@ -103,6 +103,11 @@ class WeatherWidget {
     this.myMap.setCenter([breadth, longitude]);
   }
 }
-const widget = new WeatherWidget("weather1");
-const btn = document.getElementById("add");
-btn.addEventListener("click", () => new WeatherWidget("weather2"));
+const widgets = [new WeatherWidget("weather1")];
+const addWidget = document.getElementById("add");
+addWidget.addEventListener("click", () => {
+  widgets.push(new WeatherWidget("weather2"));
+  if (widgets.length === 2) {
+    addWidget.style.display = "none";
+  }
+});

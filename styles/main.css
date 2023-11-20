@@ -2,36 +2,26 @@ body{
     font-size: 18px;
     box-sizing: border-box;
 }
-.wheather_wrapper{
-    flex: 1;
-    margin-right: 10px;
-}
+
 form{
 margin-top: 18px;
 margin-bottom: 16px;
 text-align: center;
 }
+
 form div{
     margin-bottom: 15px;
     position: relative;
 }
+
 input{
     width: 300px;
     border: 1px solid #3b3232;
     border-radius: 2px;
     height: 18px;
 }
-.container{
-    display: flex;
-    justify-content: space-between;
-}
-.wheather{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: auto;
-}
-.wheather_show{
+
+button{
     background-color: #355FCA;
     padding: 8px 18px;
     border: none;
@@ -40,11 +30,33 @@ input{
     color: #fff;
     cursor: pointer;
 }
+
+button:hover{
+    background-color: #617cbe;
+}
+
+.wheather_wrapper{
+    flex: 1;
+    margin-right: 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.wheather{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
 .wheather_info_description{
     display: grid;
-    grid-template-columns: 80px 180px 50px ;
+    grid-template-columns: 75px 180px 50px ;
     grid-template-rows: 50px 50px;
-    gap: 24px;
+    gap: 12px;
     flex-wrap: wrap;
 
 }
@@ -53,17 +65,4 @@ input{
     height: 50px;
     display: none;
 }
-.addWidget{
-    background-color: #355FCA;
-    padding: 8px 18px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    color: #fff;
-    cursor: pointer;
-    width: 150px;
-}
-.map{
-    display: grid;
-    grid-column: auto;
-}
+
